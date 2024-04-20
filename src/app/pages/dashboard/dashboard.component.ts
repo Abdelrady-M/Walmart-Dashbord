@@ -57,7 +57,8 @@ export class DashboardComponent implements OnInit {
     this.userService.getAllUsers().subscribe({
       next: (data) => {
         // console.log(data["users"].length);
-        this.userCounter = data["users"].length
+        // this.userCounter = data["users"].length
+        this.userCounter = data.length
       }
     })
   }

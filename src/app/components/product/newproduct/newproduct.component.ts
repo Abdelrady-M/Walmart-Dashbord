@@ -138,7 +138,7 @@ export class NewproductComponent implements OnInit {
     } else {
       this.productsService.insertNewProduct(this.product).subscribe({
         next: (data) => {
-          // console.log(data);
+          console.log(data);
           this.tost.success({
             detail: 'success Message',
             summary: 'product created successfuly',

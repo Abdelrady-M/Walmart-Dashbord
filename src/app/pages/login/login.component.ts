@@ -48,6 +48,7 @@ export class LoginComponent {
   }
 
   loginFunc() {
+    console.log("Hello");
     const val = this.userLoginForm.value;
     if (val.email && val.password) {
       this.adminAuth.login(val.email, val.password).subscribe({

@@ -11,7 +11,6 @@ import { IOrdersPrds } from '../models/iOrderPrds';
 export class OrderRequestsService {
 
   constructor(private httpClient: HttpClient) { }
-
   getAllOrders():Observable<{allOrders:[]}>{
     return this.httpClient.get<{allOrders:[]}>(`${environment.BAseApiURL}/orders`)
   }
